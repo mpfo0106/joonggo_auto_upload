@@ -55,7 +55,7 @@ class ArticlePoster:
     def _input_quality_status(self, product_condition):
         quality_status = QUALITY_STATUS.get(product_condition)
         if quality_status:
-            self.web_handler.click_element((By.ID, f"quality{quality_status}"))
+            self.web_handler.click_element((By.CSS_SELECTOR, f"label[for='quality{quality_status}']"))
         else:
             self.logger.warning(
                 f"Quality status '{product_condition}' not found in QUALITY_STATUS"
