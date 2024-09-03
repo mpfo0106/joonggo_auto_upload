@@ -297,7 +297,9 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains+all,python,dotenv,macos
-# Custom ignores
-output/my_integrated_img/
-images/
+
+
+# For Sample
+images/*
+!images/아크테릭스/
 data/joonggo_article.xlsx
