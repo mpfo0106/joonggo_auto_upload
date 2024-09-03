@@ -12,7 +12,7 @@ from src.handlers.web_element_handler import WebElementHandler
 from src.utils.logger import setup_logger
 
 
-class ArticlePoster:
+class JoongNaArticlePoster:
     def __init__(self, driver):
         self.driver = driver
         self.web_handler = WebElementHandler(driver)
