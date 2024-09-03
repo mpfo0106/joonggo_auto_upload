@@ -1,4 +1,4 @@
+from .joong_na_article_poster import JoongNaArticlePoster
 from .login import NaverLogin
-from .article_poster import ArticlePoster
 
-__all__ = ['NaverLogin', 'ArticlePoster']
+__all__ = ['NaverLogin', 'JoongNaArticlePoster']
