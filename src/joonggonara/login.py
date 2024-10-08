@@ -22,9 +22,10 @@ class NaverLogin:
             login_btn.click()
 
             time.sleep(0.5)
-            self.web_handler.input_text((By.NAME, "id"), username)
+            self.driver.execute_script("document.getElementById('id').value = arguments[0];", username)
+
             time.sleep(0.5)
-            self.web_handler.input_text((By.NAME, "pw"), password)
+            self.driver.execute_script("document.getElementById('pw').value = arguments[0];", password)
 
             self.web_handler.click_element((By.ID, "log.login"))
             self.logger.info("Login successful")
